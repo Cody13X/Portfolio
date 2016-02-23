@@ -3,16 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Mon Portofolio</title>
-
-
-    <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link  rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+  integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -20,51 +12,514 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <!-- Link javascript -->
-  <!--<script src="script.js"></script>-->
+  <script src="js/script.js"></script>
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="row">
+  <div class="container-fluid" id="root">
+    <div class="row root">
 
-      <header>
-
-        <div class="navbar ; col-xs-12">
-          <ul>
-      <!--      <li><a href="#">Accueil</a></li>
-            <li><a href="#">Mon Compte Bonobo</a></li>
-            <li><a href="#">Confidentialité</a></li>
-            <li><a href="#">Me déconnecter</a></li>-->
-          </ul>
-        </div>
-
+      <header class="col-xs-12 header">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt></a>
+        <nav>
+          <a href="index.html" class="active">Portfolio</a>
+          <a href="#proj">Projets</a>
+          <a href="#compet">Compétences</a>
+          <a href="#cont">Contact</a>
+        </nav>
       </header>
 
-      <div class="main">
+      <div class="row">
+        <div class="col-xs-12 title">
+          <h1>Portfolio</h1>
+          <span class="subtitle">Mes réalisations</span>
+          <hr>
+        </div>
 
-        <section class="col-lg-6 col-md-6 col-sm-6 col-xs-12 gauche">
-
-
+        <section class="col-xs-12 works" id="portfolio">
+          <article>
+            <a href="#projet1" class="thumb"><img src="img/works/1/ExtremeP.jpg" alt></a>
+            <h3>Extreme_Programming</h3>
+            <em>HTML/CSS</em>
+            <aside>
+              <div class="slideshow">
+                <div>
+                  <a href="http://cody13x.github.io/ex_extreme_programming/" target="_tab">
+                    <img src="img/works/1/ExtremeP-1.jpg" alt>
+                  </a>
+                <!--  <a href="http://cody13x.github.io/ex_extreme_programming/" target="_tab">
+                    <span>img/works/1/ExtremeP-2.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex_extreme_programming/" target="_tab">
+                    <span>img/works/1/ExtremeP-3.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex_extreme_programming/" target="_tab">
+                    <span>img/works/1/ExtremeP-4.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex_extreme_programming/" target="_tab">
+                    <span>img/works/1/ExtremeP-5.jpg</span>
+                  </a>-->
+                </div>
+              </div>
+              <div class="infos">
+                <h3>Extreme_Programming</h3>
+                <em>HTML/CSS</em>
+                <div class="content">
+                  <ul>
+                    <li><strong>Rôle :</strong>&nbsp;développeur</li>
+                    <li><strong>Webdesign/développement :</strong>
+                      <a href"">Kévin Lachaise</a>
+                    </li>
+                    <li>
+                      <strong>Client :</strong>&nbsp;
+                      <a href"https://www.centrale-marseille.fr/fr/simplonmars">SimplonMars</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </article>
+          <article>
+            <a href="#projet2" class="thumb"><img src="img/works/2/PetitP.jpg" alt></a>
+            <h3>Le petit Prince</h3>
+            <em>HTML/CSS/BOOTSTRAP</em>
+            <aside>
+              <div class="slideshow">
+                <div>
+                  <a href="http://cody13x.github.io/ex-petit_prince/" target="_tab">
+                    <img src="img/works/2/PetitP-1.jpg" alt>
+                  </a>
+                <!--  <a href="http://cody13x.github.io/ex-petit_prince/" target="_tab">
+                    <span>img/works/2/PetitP-2.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex-petit_prince/" target="_tab">
+                    <span>img/works/2/PetitP-3.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex-petit_prince/" target="_tab">
+                    <span>img/works/2/PetitP-4.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex-petit_prince/" target="_tab">
+                    <span>img/works/2/PetitP-5.jpg</span>
+                  </a>-->
+                </div>
+              </div>
+              <div class="infos">
+                <h3>Le petit Prince</h3>
+                <em>HTML/CSS/BOOTSTRAP</em>
+                <div class="content">
+                  <ul>
+                    <!--mettre des <p> a la place de ul li ?-->
+                    <li><strong>Rôle :</strong>&nbsp;développeur</li>
+                    <li>
+                      <strong>Client :</strong>&nbsp;
+                      <a href"https://www.centrale-marseille.fr/fr/simplonmars">SimplonMars</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </article>
+          <article>
+            <a href="#projet3" class="thumb"><img src="img/works/3/NASPECOF.jpg" alt></a>
+            <h3>NASPECOF</h3>
+            <em>HTML/CSS/JAVASCRIPT</em>
+            <aside>
+              <div class="slideshow">
+                <div>
+                  <a href="http://naspecof.github.io/naspecof.github.io/" target="_tab">
+                    <img src="img/works/3/NASPECOF-1.jpg" alt>
+                  </a>
+                <!--  <a href="http://naspecof.github.io/naspecof.github.io/" target="_tab">
+                    <span>img/works/3/NASPECOF-2.jpg</span>
+                  </a>
+                  <a href="http://naspecof.github.io/naspecof.github.io/" target="_tab">
+                    <span>img/works/3/NASPECOF-3.jpg</span>
+                  </a>
+                  <a href="http://naspecof.github.io/naspecof.github.io/" target="_tab">
+                    <span>img/works/3/NASPECOF-4.jpg</span>
+                  </a>
+                  <a href="http://naspecof.github.io/naspecof.github.io/" target="_tab">
+                    <span>img/works/3/NASPECOF-5.jpg</span>
+                  </a>-->
+                </div>
+              </div>
+              <div class="infos">
+                <h3>NASPECOF</h3>
+                <em>HTML/CSS/JAVASCRIPT</em>
+                <div class="content">
+                  <ul>
+                    <!--mettre des <p> a la place de ul li ?-->
+                   <li><strong>Rôle :</strong>&nbsp;Chef de projet/développeur</li>
+                    <li><strong>Webdesign/développement :</strong>
+                      <a href"">Jousna</a>
+                    </li>
+                    <li><strong>développement :</strong>
+                      <a href"">Anthony</a>
+                    </li>
+                    <li>
+                      <strong>Client :</strong>&nbsp;
+                      <a href"https://www.centrale-marseille.fr/fr/simplonmars">SimplonMars</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </article>
+          <article class="last">
+            <a href="#projet4" class="thumb"><img src="img/works/4/snake.jpg" alt></a>
+            <h3>Paperjs-snake</h3>
+            <em>HTML/CSS/PaperJS</em>
+            <aside>
+              <div class="slideshow">
+                <div>
+                  <a href="http://paperjs-snake.github.io/paperjs-snake.github.io/" target="_tab">
+                    <img src="img/works/4/snake-1.jpg" alt>
+                  </a>
+              <!--    <a href="http://paperjs-snake.github.io/paperjs-snake.github.io/" target="_tab">
+                    <span>img/works/4/snake-2.jpg</span>
+                  </a>
+                  <a href="http://paperjs-snake.github.io/paperjs-snake.github.io/" target="_tab">
+                    <span>img/works/4/snake-3.jpg</span>
+                  </a>
+                  <a href="http://paperjs-snake.github.io/paperjs-snake.github.io/" target="_tab">
+                    <span>img/works/4/snake-4.jpg</span>
+                  </a>
+                  <a href="http://paperjs-snake.github.io/paperjs-snake.github.io/" target="_tab">
+                    <span>img/works/4/snake-5.jpg</span>
+                  </a>-->
+                </div>
+              </div>
+              <div class="infos">
+                <h3>Paperjs-snake</h3>
+                <em>HTML/CSS/PaperJS</em>
+                <div class="content">
+                  <ul>
+                    <!--mettre des <p> a la place de ul li ?-->
+                   <li><strong>Rôle :</strong>&nbsp;développeur</li>
+                    <li><strong>Webdesign/développement :</strong>
+                      <a href"">Abdel-Malik</a>
+                      <a href"">Simon Pouchol</a>
+                    </li>
+                    <li>
+                      <strong>Client :</strong>&nbsp;
+                      <a href"https://www.centrale-marseille.fr/fr/simplonmars">SimplonMars</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </article>
+          <div class="cb"></div>
+          <article>
+            <a href="#projet5" class="thumb"><img src="img/works/5/HTML-CSS.jpg" alt></a>
+            <h3>HTML/CSS Tutorat lycéens</h3>
+            <em>REVEALJS</em>
+            <aside>
+              <div class="slideshow">
+                <div>
+                  <a href="http://cody13x.github.io/html-css.github.io/#/" target="_tab">
+                    <img src="img/works/5/HTML-CSS-1.jpg" alt>
+                  </a>
+            <!--      <a href="http://cody13x.github.io/html-css.github.io/#/1" target="_tab">
+                    <span>img/works/5/HTML-CSS-2.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/html-css.github.io/#/2" target="_tab">
+                    <span>img/works/5/HTML-CSS-3.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/html-css.github.io/#/3" target="_tab">
+                    <span>img/works/5/HTML-CSS-4.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/html-css.github.io/#/4" target="_tab">
+                    <span>img/works/5/HTML-CSS-5.jpg</span>
+                  </a>-->
+                </div>
+              </div>
+              <div class="infos">
+                <h3>HTML/CSS Tutorat lycéens</h3>
+                <em>REVEALJS</em>
+                <div class="content">
+                  <ul>
+                    <!--mettre des <p> a la place de ul li ?-->
+                    <li><strong>Rôle :</strong>&nbsp;développeur</li>
+                    <li>
+                      <strong>Client :</strong>&nbsp;
+                      <p>Lycée Saint-Exupéry</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </article>
+          <article>
+            <a href="#projet6" class="thumb"><img src="img/works/6/ex-twitter.jpg" alt></a>
+            <h3>Exercice Twitter</h3>
+            <em>HTML/CSS</em>
+            <aside>
+              <div class="slideshow">
+                <div>
+                  <a href="http://cody13x.github.io/ex-twitter/" target="_tab">
+                    <img src="img/works/6/ex-twitter-1.jpg" alt>
+                  </a>
+              <!--    <a href="http://cody13x.github.io/ex-twitter/" target="_tab">
+                    <span>img/works/6/ex-twitter-2.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex-twitter/" target="_tab">
+                    <span>img/works/6/ex-twitter-3.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex-twitter/" target="_tab">
+                    <span>img/works/6/ex-twitter-4.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex-twitter/" target="_tab">
+                    <span>img/works/6/ex-twitter-5.jpg</span>
+                  </a>-->
+                </div>
+              </div>
+              <div class="infos">
+                <h3>Exercice Twitter</h3>
+                <em>HTML/CSS</em>
+                <div class="content">
+                  <ul>
+                    <!--mettre des <p> a la place de ul li ?-->
+                   <li><strong>Rôle :</strong>&nbsp;développeur</li>
+                    <li>
+                      <strong>Client :</strong>&nbsp;
+                      <a href"https://www.centrale-marseille.fr/fr/simplonmars">SimplonMars</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </article>
+          <article>
+            <a href="#projet7" class="thumb"><img src="img/works/7/ex-google.jpg" alt></a>
+            <h3>Exercice google</h3>
+            <em>HTML/CSS/JAVASCIPT</em>
+            <aside>
+              <div class="slideshow">
+                <div>
+                  <a href="http://cody13x.github.io/ex-google/" target="_tab">
+                    <img src="img/works/7/ex-google-1.jpg" alt>
+                  </a>
+              <!--    <a href="http://cody13x.github.io/ex-google/" target="_tab">
+                    <span>img/works/7/ex-google-2.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex-google/" target="_tab">
+                    <span>img/works/7/ex-google-3.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex-google/" target="_tab">
+                    <span>img/works/7/ex-google-4.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/ex-google/" target="_tab">
+                    <span>img/works/7/ex-google-5.jpg</span>
+                  </a>-->
+                </div>
+              </div>
+              <div class="infos">
+                <h3>Exercice google</h3>
+              <em>HTML/CSS/JAVASCRIPT</em>
+                <div class="content">
+                  <ul>
+                    <!--mettre des <p> a la place de ul li ?-->
+                    <li><strong>Rôle :</strong>&nbsp;développeur</li>
+                    <li>
+                      <strong>Client :</strong>&nbsp;
+                      <a href"https://www.centrale-marseille.fr/fr/simplonmars">SimplonMars</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </article>
+          <article class="last">
+            <a href="#projet8" class="thumb"><img src="img/works/8/sonic-run.jpg" alt></a>
+            <h3>Exercice animations CSS/jQuery</h3>
+            <em>HTML/CSS/jQuery</em>
+            <aside>
+              <div class="slideshow">
+                <div>
+                  <a href="http://cody13x.github.io/sonic-run/step6/step6.html" target="_tab">
+                    <img src="img/works/8/sonic-run-1.jpg" alt>
+                  </a>
+                <!--  <a href="http://cody13x.github.io/sonic-run/step6/step6.html" target="_tab">
+                    <span>img/works/8/sonic-run-2.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/sonic-run/step6/step6.html" target="_tab">
+                    <span>img/works/8/sonic-run-3.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/sonic-run/step6/step6.html" target="_tab">
+                    <span>img/works/8/sonic-run-4.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/sonic-run/step6/step6.html" target="_tab">
+                    <span>img/works/8/sonic-run-5.jpg</span>
+                  </a>-->
+                </div>
+              </div>
+              <div class="infos">
+                <h3>Exercice animations CSS/jQuery</h3>
+                <em>HTML/CSS/jQuery</em>
+                <div class="content">
+                  <ul>
+                    <!--mettre des <p> a la place de ul li ?-->
+                   <li><strong>Rôle :</strong>&nbsp;développeur</li>
+                    <li><strong>développement :</strong>
+                      <a href"">Bruno Pages</a>
+                    </li>
+                    <li>
+                      <strong>Client :</strong>&nbsp;
+                      <a href"https://www.centrale-marseille.fr/fr/simplonmars">SimplonMars</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </article>
+          <div class="cb"></div>
+          <article>
+            <a href="#projet9" class="thumb"><img src="img/works/9/Bonsai.jpg" alt></a>
+            <h3>Challenge Inter-Simplon</h3>
+            <em>HTML/CSS</em>
+            <aside>
+              <div class="slideshow">
+                <div>
+                  <a href="http://cody13x.github.io/challenge-interpromo/" target="_tab">
+                    <img src="img/works/9/Bonsai-1.jpg" alt>
+                  </a>
+              <!--    <a href="http://cody13x.github.io/challenge-interpromo/" target="_tab">
+                    <span>img/works/9/Bonsai-2.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/challenge-interpromo/" target="_tab">
+                    <span>img/works/9/Bonsai-3.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/challenge-interpromo/" target="_tab">
+                    <span>img/works/8/Bonsai-4.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/challenge-interpromo/" target="_tab">
+                    <span>img/works/9/Bonsai-5.jpg</span>
+                  </a>-->
+                </div>
+              </div>
+              <div class="infos">
+                <h3>Challenge Inter-Simplon</h3>
+                <em>HTML/CSS</em>
+                <div class="content">
+                  <ul>
+                    <!--mettre des <p> a la place de ul li ?-->
+                    <li><strong>Rôle :</strong>&nbsp;développeur</li>
+                    <li>
+                      <strong>Client :</strong>&nbsp;
+                      <a href"https://www.centrale-marseille.fr/fr/simplonmars">SimplonMars</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </article>
+          <article>
+            <a href="#projet10" class="thumb"><img src="img/works/10/Birdman.jpg" alt></a>
+            <h3>Exercice CSS</h3>
+            <em>HTML/CSS</em>
+            <aside>
+              <div class="slideshow">
+                <div>
+                  <a href="http://cody13x.github.io/Birdman/" target="_tab">
+                    <img src="img/works/10/Birdman-1.jpg" alt>
+                  </a>
+            <!--      <a href="http://cody13x.github.io/Birdman/" target="_tab">
+                    <span>img/works/10/Birdman-2.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/Birdman/" target="_tab">
+                    <span>img/works/10/Birdman-3.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/Birdman/" target="_tab">
+                    <span>img/works/10/Birdman-4.jpg</span>
+                  </a>
+                  <a href="http://cody13x.github.io/Birdman/" target="_tab">
+                    <span>img/works/10/Birdman-5.jpg</span>
+                  </a>-->
+                </div>
+              </div>
+              <div class="infos">
+                <h3>Exercice CSS</h3>
+                <em>HTML/CSS</em>
+                <div class="content">
+                  <ul>
+                    <!--mettre des <p> a la place de ul li ?-->
+                    <li><strong>Rôle :</strong>&nbsp;développeur</li>
+                    <li>
+                      <strong>Client :</strong>&nbsp;
+                      <a href"https://www.centrale-marseille.fr/fr/simplonmars">SimplonMars</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </article>
+          <div class="cb"></div>
         </section>
-
-        <section class="col-lg-6 col-md-6 col-sm-6 col-xs-12 droite">
-
-
-        </section>
-
       </div>
 
-      <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <ul>
-        <!--  <li class="btntwitter"><a href="#"><img src="img/logo_f.png" alt="Logo lien Twitter" /></li>
-          <li class="btnfacebook"><a href="#"><img src="img/logo_md_a.jpg" alt="Logo lien Facebook" /></li>
-          <li></li>-->
-        </ul>
+      <section class="col-xs-12 projects" id="proj">
+        <article>
+          <img src="img/proj/1/stalker.jpg" class="thumb" alt>
+          <h2><a href="http://www.stalkerproject.com">Site perso développement jeu vidéo 3d</a>
+        </article>
+        <hr>
+        <article>
+          <img src="img/proj/2/Bonobo.jpg" class="thumb" alt>
+          <h2><a href="https://github.com/shinobic/bonobo-project">Exercice client twitter front</a>
+        </article>
+        <hr>
+      </section>
+
+      <section class="col-xs-12 skills" id="compet">
+        <div class="col">
+          <p><strong>HTML/CSS</strong><br>Débutant en formation</p>
+          <img src="img/html5.png" alt>
+        </div>
+        <div class="col">
+          <p><strong>PHP</strong><br>Débutant en formation</p>
+          <img src="img/php.png" alt>
+        </div>
+        <div class="col">
+          <p><strong>Javascript/jQuery</strong><br>Débutant en formation</p>
+          <img src="img/jquery.png" alt>
+        </div>
+        <div class="col">
+          <p><strong>Wordpress</strong><br>Débutant en formation</p>
+          <img src="img/wordpress.png" alt>
+        </div>
+        <div class="col">
+          <p><strong>Git</strong><br>Débutant en formation</p>
+          <img src="img/git.png" alt>
+        </div>
+        <div class="cb"></div>
+      </section>
+      <div class="row">
+      <section class="col-xs-12 contact" id="cont">
+        <div class="alert alert-info">
+          En raison d'un emploi du temps surchargé je n'accepte plus de nouveaux projets. Désolé
+        </div>
+      </section>
+    </div>
+      <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer" id="footer">
+        <div class="wrap">
+          <div class="about">
+            <h4>A propos</h4>
+            <p>Je m'appelle Yannick Escoffier, j'ai commencé le développement web pour développer des petits projets perso à la base,
+              puis grâce à la formation simplonMars c'est devenu une vraie vocation. J'aime expérimenter, découvrir et maitriser au
+              fur et à mesure de mes réalisations.
+          </div>
+          <div class="center"><p></p></div>
+          <div class="social">
+            <h4>Retrouvez moi sur :</h4>
+            <a href="https://fr.linkedin.com/in/yannick-escoffier-8a89a710b"><img src="img/linkedin.png" height="32" alt=""></a>
+          </div>
+        </div>
       </footer>
 
-    </div>
-  </div>
+    </div><!--row-->
+  </div><!--container-->
 
 </body>
 </html>
