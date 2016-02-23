@@ -152,7 +152,7 @@ section.work .slideshow {
   width: 488px;
   height: 433px;
   position: absolute;
-  top: 16px;
+  /*top: 16px;*/
 }
 section.work .slideshow .nivoslider {
   width: 460px;

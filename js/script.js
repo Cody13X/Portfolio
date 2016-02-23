@@ -66,8 +66,8 @@ $(document).ready(function() {
     $('.thumb').off('click').on("click", function(e) {
       e.preventDefault();
       $(".work").remove();
-      //var mydiv = $(".cb:first");
-      var mydiv = $(this).parent().find(".cb");
+      var mydiv = $(".cb:first");
+    //  var mydiv = $(this).parent().find(".cb");
       var links = $(this).parent().find("aside a");
       var infos = $(this).parent().find("aside .infos");
 
