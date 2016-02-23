@@ -87,7 +87,7 @@ $(document).ready(function() {
       $(".nivoSlider a").each(function() {
         var a_src =  $(this).find("img").attr('src');
         var mcss = "url(" + a_src + ")";
-        $(".nivoSlider").css({"background": mcss + "no-repeat"});
+      //  $(".nivoSlider").css({"background": mcss + "no-repeat"});
       });
     });
 /*  }
