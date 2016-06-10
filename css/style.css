@@ -101,8 +101,9 @@ section.works article {
 }
 section.works article .thumb {
   background: url(img/link.png) center center white no-repeat;
-  padding: 0;
-  margin: 0;
+/*  padding: 0;
+  margin: 0;*/
+  margin-left: 90px;
 }
 section.works article .thumb:hover img {
   filter: progid:DXimageTransform.Microsoft.Alpha(Opacity=60);
@@ -124,12 +125,14 @@ section.works article a {
 }
 section.works article h3 {
   font-size: 16px;
+  margin-left: 140px;
   margin-bottom: 1%;
 }
 section.works article em {
   display: block;
   font-style: italic;
   font-size: 14px;
+  margin-left: 140px;
   margin-bottom: 8%;
 }
 section.works article aside {
@@ -163,7 +166,7 @@ section.work .slideshow .nivoslider {
   overflow: hidden;
 }
 .nivoslider a.nivo-imageLink {
-  position: absolute;
+/*  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -171,7 +174,7 @@ section.work .slideshow .nivoslider {
   border: 0;
   /*padding: 0;
   margin: 0;*/
-  z-index: 6;
+/*  z-index: 6;*/
 }
 .nivo-imageLink img {
   padding: 11% 3%;

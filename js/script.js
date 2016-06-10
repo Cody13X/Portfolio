@@ -66,8 +66,7 @@ $(document).ready(function() {
     $('.thumb').off('click').on("click", function(e) {
       e.preventDefault();
       $(".work").remove();
-      var mydiv = $(".cb:first");
-    //  var mydiv = $(this).parent().find(".cb");
+      var mydiv = $(this).parent().nextAll(".cb:first");
       var links = $(this).parent().find("aside a");
       var infos = $(this).parent().find("aside .infos");
 
@@ -79,8 +78,7 @@ $(document).ready(function() {
 
       //loop les links a
       $('.nivoSlider span').replaceWith(function() {
-        //alert(this.text())
-        return $('<img src="'+ $(this).text() +'" />', {
+        return $('<img style="display: none" src="'+ $(this).text() +'" />', {
         });
       });
 
