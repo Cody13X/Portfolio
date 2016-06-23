@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  //boucle events
   var actSection = "";
   function hide_active_section() {
     if(actSection === "Portfolio")
@@ -40,54 +39,49 @@ $(document).ready(function() {
     hide_active_section();
     $('.contact').css({"display": "inline"});
   }
- //function onTick() {
-  //si click sur lien navbar
-      $('nav a').off('click').on("click", function(e) {
-        e.preventDefault();
 
-        actSection = $('.active').text();
+  $('nav a').off('click').on("click", function(e) {
+    e.preventDefault();
+    actSection = $('.active').text();
 
-        if($(this).not(".active").length > 0) {
-          $('.active').removeClass('active');
-          $(this).toggleClass('active');
+    if($(this).not(".active").length > 0) {
+      $('.active').removeClass('active');
+      $(this).toggleClass('active');
 
-          if($(this).text() === 'Projets')
-            showProjects(this);
-          else if($(this).text() === 'Compétences')
-            showComp(this);
-          else if($(this).text() === 'Portfolio')
-              showPortfolio(this);
-          else
-            showContact(this);
-        }
-    });
+      if($(this).text() === 'Projets')
+        showProjects(this);
+      else if($(this).text() === 'Compétences')
+        showComp(this);
+      else if($(this).text() === 'Portfolio')
+        showPortfolio(this);
+      else
+        showContact(this);
+    }
+  });
 
-    //si click sur projet
-    $('.thumb').off('click').on("click", function(e) {
-      e.preventDefault();
-      $(".work").remove();
-      var mydiv = $(this).parent().nextAll(".cb:first");
-      var links = $(this).parent().find("aside a");
-      var infos = $(this).parent().find("aside .infos");
+  //si click sur projet
+  $('.thumb')/*.off('click')*/.on("click", function(e) {
+    //e.preventDefault();
+    $(".work").remove();
+    var mydiv = $(this).parent().nextAll(".cb:first");
+    var links = $(this).parent().find("aside a");
+    var infos = $(this).parent().find("aside .infos");
 
-      //alert(mydiv.html);
-      $(mydiv).after('<section class="work"><div class="slideshow" style="left: 0px; opacity: 1;"><div class="nivoSlider" style="position: relative;"></div></div></section>');
-      $(".work").append(infos);
-      $(".nivoSlider").append(links);
-      $(".nivoSlider a").toggleClass("nivo-imageLink");
+    $(mydiv).after('<section class="work"><div class="slideshow" style="left: 0px; opacity: 1;"><div class="nivoSlider" style="position: relative;"></div></div></section>');
+    $(".work").append(infos);
+    $(".nivoSlider").append(links);
+    $(".nivoSlider a").toggleClass("nivo-imageLink");
 
-      //loop les links a
-      $('.nivoSlider span').replaceWith(function() {
-        return $('<img style="display: none" src="'+ $(this).text() +'" />', {
-        });
-      });
-
-      $(".nivoSlider a").each(function() {
-        var a_src =  $(this).find("img").attr('src');
-        var mcss = "url(" + a_src + ")";
-      //  $(".nivoSlider").css({"background": mcss + "no-repeat"});
+    //loop links and change span into img
+    $('.nivoSlider span').replaceWith(function() {
+      return $('<img src="'+ $(this).text() +'" />', {
       });
     });
-/*  }
-  setInterval(onTick, 500);*/
+  });
+
+  setInterval(function(){
+    $(".nivo-imageLink:first-child").animate({"margin-left": -488}, 800, function(){
+      $(this).css("margin-left", 0).appendTo(".nivoSlider");
+    });
+  }, 3500);
 })
