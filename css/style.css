@@ -29,13 +29,16 @@ body {
 }
 header.header p {
   position: absolute;
-  line-height: 85px;
-  margin-left: 3.4em;
+  line-height: 45px;
+/*  margin-left: 3.4em;*/
   font-size: 40px;
   font: arial;
 }
+header.header #role {
+  margin-top: 50px;
+}
 header.header a {
-  margin-left: 40%;
+  margin-left: 44%;
 }
 header.header .logo {
   float: left;
@@ -92,8 +95,7 @@ hr {
 section.works article {
   display: inline;
   float: left;
-  margin-left: .2%;
-  margin-right: 5.5%;
+  margin-left: 5%;
   width: 20%;
 }
 section.works article .thumb {
@@ -163,7 +165,7 @@ section.work a {
 section.work .infos {
   padding-left: 535px;
   padding-top: 46px;
-  width: 405px;
+/*  width: 405px;*/
 }
 section.work .infos h3 {
   font-size: 24px;
@@ -173,6 +175,9 @@ section.work .infos em {
   display: block;
   font-style: italic;
   margin-bottom: 7px;
+}
+section.work .content{
+  width: 360px;
 }
 section.projects {
   display: none;
@@ -194,8 +199,8 @@ section.skills {
 section.skills .col {
   display: inline;
   float: left;
-  margin-left: 10%;
-  margin-right: 5%;
+  margin-left: 16%;
+  margin-right: 4%;
   margin-bottom: 10px;
   width: 135px;
   text-align: center;
@@ -232,4 +237,25 @@ h4 {
 }
 p {
   margin-bottom: 1.5em;
+}
+
+@media all and (min-width: 800px) and (max-width: 1024px)
+{
+    section.works article {
+      display: inline;
+      float: left;
+      margin-left: 0.2%;
+      margin-right: 5.5%;
+      width: 20%;
+    }
+
+    section.skills .col {
+      display: inline;
+      float: left;
+      margin-left: 11.4%;
+      margin-right: 4%;
+      margin-bottom: 10px;
+      width: 135px;
+      text-align: center;
+    }
 }
