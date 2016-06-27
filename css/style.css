@@ -104,7 +104,7 @@ section.works article .thumb {
 section.works article .thumb:hover img {
   filter: progid:DXimageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
-  margin-left: -14px;
+  margin-left: -27px;
 }
 section.works article .thumb img {
   opacity: 1;
@@ -239,15 +239,22 @@ p {
   margin-bottom: 1.5em;
 }
 
-@media all and (min-width: 800px) and (max-width: 1024px)
+@media all and (min-width: 800px)
 {
     section.works article {
       display: inline;
       float: left;
-      margin-left: 0.2%;
-      margin-right: 5.5%;
+      margin-left: 0.19%;
+      margin-right: 5%;
       width: 20%;
     }
+
+    section.works article .thumb:hover img {
+      filter: progid:DXimageTransform.Microsoft.Alpha(Opacity=60);
+      opacity: 0.6;
+      margin-left: -10px;
+    }
+
 
     section.skills .col {
       display: inline;
