@@ -21,7 +21,6 @@ body {
   min-height: 100%;
   height: auto !important;
   margin-bottom: -400px;
-  /*background-color: rgba(0, 200, 200, 0.1);*/
 }
 .header{
   padding: 20px 0;
@@ -30,7 +29,6 @@ body {
 header.header p {
   position: absolute;
   line-height: 45px;
-/*  margin-left: 3.4em;*/
   font-size: 40px;
   font: arial;
 }
@@ -38,12 +36,10 @@ header.header #role {
   margin-top: 50px;
 }
 header.header a {
-  margin-left: 44%;
+  margin-left: 46%;
 }
 header.header .logo {
   float: left;
-  width: 100px;
-  display: block;
 }
 header.header img {
   border-radius: 50%;
@@ -95,11 +91,12 @@ hr {
 section.works article {
   display: inline;
   float: left;
-  margin-left: 5%;
-  width: 20%;
+  margin-left: 8.2%;
+  width: 15.1%;
 }
 section.works article .thumb {
-  background: url(img/link.png) center center white no-repeat;
+  background: url(img/link.png) center white no-repeat;
+  background-position: 60px;
 }
 section.works article .thumb:hover img {
   filter: progid:DXimageTransform.Microsoft.Alpha(Opacity=60);
@@ -239,8 +236,12 @@ p {
   margin-bottom: 1.5em;
 }
 
-@media all and (min-width: 800px)
+@media screen and (max-width: 960px)
 {
+    header.header a {
+      margin-left: 42.2%;
+    }
+
     section.works article {
       display: inline;
       float: left;
@@ -248,14 +249,14 @@ p {
       margin-right: 5%;
       width: 20%;
     }
-
+    section.works article .thumb {
+      background: url(img/link.png) center center white no-repeat;
+    }
     section.works article .thumb:hover img {
       filter: progid:DXimageTransform.Microsoft.Alpha(Opacity=60);
       opacity: 0.6;
       margin-left: -10px;
     }
-
-
     section.skills .col {
       display: inline;
       float: left;
