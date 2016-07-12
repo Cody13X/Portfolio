@@ -206,6 +206,12 @@ section.skills .col p {
 section.contact div {
   margin-bottom: 30px;
 }
+#cont #name {
+  margin-left: 22px;
+}
+#cont #email {
+  margin-left: 18px;
+}
 
 #footer {
   position: relative;
