@@ -205,12 +205,15 @@ section.skills .col {
 section.skills .col p {
   margin-bottom: 10px;
 }
-section.contact {
+#cont {
   display: none;
 }
 section.contact div {
   margin-bottom: 30px;
 }
+/*#cont:target{
+     display: block;
+}*/
 #footer {
   position: relative;
   height: 400px;
