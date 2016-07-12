@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  var actSection = "";
+
+  /*var actSection = "";
   function hide_active_section() {
     if(actSection === "Portfolio")
       $('#portfolio *').hide();
@@ -25,42 +26,36 @@ $(document).ready(function() {
     $('.skills *').css({"display": "inline"});
   }
   function showPortfolio(pthis) {
-  /*  $('h1').text("Portfolio");
-    $('.subtitle').text("Mes réalisations");
-    hide_active_section();
-    $('#portfolio *').show();
-    $('section.works article').css({"display": "inline-block"});*/
     var href = 'index.html';
     $(location).attr('href', 'index.html');
   }
   function showContact(pthis) {
-    $('h1').text("Me contacter");
+    //$('h1').text("Me contacter");
     $('.subtitle').text("M'envoyer un pigeon électronique");
     hide_active_section();
     $('.contact').css({"display": "inline"});
-  }
+  }*/
 
-  $('nav a').off('click').on("click", function(e) {
-    e.preventDefault();
+  $('nav a')/*.off('click')*/.on("click", function(e) {
+/*    e.preventDefault();
     actSection = $('.active').text();
 
     if($(this).not(".active").length > 0) {
       $('.active').removeClass('active');
-      $(this).toggleClass('active');
-
-      if($(this).text() === 'Projets')
-        showProjects(this);
-      else if($(this).text() === 'Compétences')
-        showComp(this);
-      else if($(this).text() === 'Portfolio')
-        showPortfolio(this);
-      else
+      $(this).addClass('active');
+      //if($(this).text() === 'Projets')*/
+    //    /*showProjects(this)*/window.location = "projets.html";
+      //else if($(this).text() === 'Compétences')
+      //  /*showComp(this)*/window.location = "competences.html";
+      /*else if($(this).text() === 'Portfolio')
+        showPortfolio(this);*/
+      /*else if($(this).text() === 'Contact')
         showContact(this);
-    }
+    }*/
   });
 
   //si click sur projet
-  $('.thumb')/*.off('click')*/.on("click", function(e) {
+  $('.thumb').on("click", function(e) {
     //e.preventDefault();
     $(".work").remove();
     var mydiv = $(this).parent().nextAll(".cb:first");
