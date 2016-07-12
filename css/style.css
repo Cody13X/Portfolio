@@ -269,3 +269,15 @@ p {
       text-align: center;
     }
 }
+
+@media screen and (max-width: 1400px)
+{
+    section.works article {
+      display: inline;
+      float: left;
+/*      margin-left: 0.19%;*/
+      margin-right: 5%;
+      width: 20%;
+    }
+
+}

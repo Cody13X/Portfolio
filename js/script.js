@@ -1,62 +1,6 @@
 $(document).ready(function() {
-
-  /*var actSection = "";
-  function hide_active_section() {
-    if(actSection === "Portfolio")
-      $('#portfolio *').hide();
-    else if(actSection === "Projets")
-      $('.projects *').hide();
-    else if(actSection === "Compétences")
-      $('.skills *').hide();
-    else if(actSection === "Contact")
-      $('.contact *').hide();
-  }
-  function showProjects(pthis) {
-    $('h1').text("Projets");
-    $('.subtitle').text("Mes projets en cours");
-    hide_active_section();
-    $('.projects').css({"display": "block"});
-    $('.projects *').css({"display": "block"});
-  }
-  function showComp(pthis) {
-    $('h1').text("Mes compétences");
-    $('.subtitle').text("Ce que je sais faire");
-    hide_active_section();
-    $('.skills').css({"display": "inline"});
-    $('.skills *').css({"display": "inline"});
-  }
-  function showPortfolio(pthis) {
-    var href = 'index.html';
-    $(location).attr('href', 'index.html');
-  }
-  function showContact(pthis) {
-    //$('h1').text("Me contacter");
-    $('.subtitle').text("M'envoyer un pigeon électronique");
-    hide_active_section();
-    $('.contact').css({"display": "inline"});
-  }*/
-
-  $('nav a')/*.off('click')*/.on("click", function(e) {
-/*    e.preventDefault();
-    actSection = $('.active').text();
-
-    if($(this).not(".active").length > 0) {
-      $('.active').removeClass('active');
-      $(this).addClass('active');
-      //if($(this).text() === 'Projets')*/
-    //    /*showProjects(this)*/window.location = "projets.html";
-      //else if($(this).text() === 'Compétences')
-      //  /*showComp(this)*/window.location = "competences.html";
-      /*else if($(this).text() === 'Portfolio')
-        showPortfolio(this);*/
-      /*else if($(this).text() === 'Contact')
-        showContact(this);
-    }*/
-  });
-
-  //si click sur projet
+  //If one project is clicked
   $('.thumb').on("click", function(e) {
-    //e.preventDefault();
     $(".work").remove();
     var mydiv = $(this).parent().nextAll(".cb:first");
     var links = $(this).parent().find("aside a");
