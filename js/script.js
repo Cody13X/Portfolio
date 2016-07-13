@@ -1,6 +1,13 @@
 $(document).ready(function() {
   //If one project is clicked
+  var noslide = false;
   $('.thumb').on("click", function(e) {
+    //No slide for one imagme only projects
+    if( $(this).hasClass("noslide") )
+      noslide = true;
+    else
+      noslide = false;
+
     $(".work").remove();
     var mydiv = $(this).parent().nextAll(".cb:first");
     var links = $(this).parent().find("aside a");
@@ -18,9 +25,11 @@ $(document).ready(function() {
     });
   });
 
-  setInterval(function(){
-    $(".nivo-imageLink:first-child").animate({"margin-left": -488}, 800, function(){
-      $(this).css("margin-left", 0).appendTo(".nivoSlider");
-    });
+  setInterval(function() {
+    if(noslide === false) {
+      $(".nivo-imageLink:first-child").animate({"margin-left": -488}, 800, function() {
+        $(this).css("margin-left", 0).appendTo(".nivoSlider");
+      });
+    }
   }, 3500);
 })
