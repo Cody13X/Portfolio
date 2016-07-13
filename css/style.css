@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box;
 }
-a {
-  /*color: #e95e4c;*/
-}
 a img {
   border: none;
 }
@@ -92,7 +89,7 @@ hr {
 section.works article {
   display: inline;
   float: left;
-  margin-left: 8.2%;
+  margin-left: 8.7%;
   width: 15.1%;
 }
 section.works article .thumb {
@@ -207,10 +204,10 @@ section.contact div {
   margin-bottom: 30px;
 }
 #cont #name {
-  margin-left: 22px;
+  margin-left: 28px;
 }
 #cont #email {
-  margin-left: 18px;
+  margin-left: 22px;
 }
 
 #footer {
@@ -238,7 +235,7 @@ p {
   margin-bottom: 1.5em;
 }
 
-@media screen and (max-width: 960px)
+@media screen and (max-width: 1000px)
 {
     header.header a {
       margin-left: 42.2%;
@@ -259,6 +256,7 @@ p {
       opacity: 0.6;
       margin-left: -10px;
     }
+
     section.skills .col {
       display: inline;
       float: left;
@@ -275,9 +273,36 @@ p {
     section.works article {
       display: inline;
       float: left;
-/*      margin-left: 0.19%;*/
       margin-right: 2%;
       width: 20%;
     }
+}
 
+@media screen and (min-width: 1050px) and (max-width: 1400px)
+{
+    section.works article {
+      display: inline;
+      float: left;
+      margin-right: -6.5%;
+      width: 20%;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px)
+{
+    section.works article {
+      display: inline;
+      float: left;
+      margin-left: 2%;
+      width: 20%;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    section.works article {
+      margin-left: 8%;
+      margin-right: 21%;
+      width: 20%;
+    }
 }
